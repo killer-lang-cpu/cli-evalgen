@@ -83,31 +83,7 @@ Instead of relying on static, overfitted public benchmarks (like HumanEval or Le
 
      Multi-Core Parallel Processing: Hardware-optimized using Python's ProcessPoolExecutor across 16 CPU threads, scanning and evaluating entire repositories in under 8 seconds.
 
-     Multi-Turn CLI Agent Trajectories: Synthesizes realistic step-by-step terminal execution traces (Terminal Command
-
-            
-    →
-    →
-
-          
-
-    Assertion Failure
-
-            
-    →
-    →
-
-          
-
-    Patch Application
-
-            
-    →
-    →
-
-          
-
-    Exit Code 0) specifically for training CLI agents (like Claude Code, Cursor, Devin).
+     * **Multi-Turn CLI Agent Trajectories:** Synthesizes realistic step-by-step terminal execution traces (Terminal Command -> Assertion Failure -> Patch Application -> Exit Code 0) specifically for training CLI agents (like Claude Code, Cursor, Devin).
 
     Cyclomatic Complexity Classifier: Measures AST branching depth and function length to categorize tasks into Easy, Medium, and Hard difficulty tiers.
 
