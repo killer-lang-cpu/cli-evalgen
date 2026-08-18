@@ -1,6 +1,16 @@
-# CLI-EvalGen Studio Pro
+# ⚡ CLI-EvalGen Studio Pro
 
-Polyglot SFT & RL Dataset Benchmark Generator & Closed-Loop Evaluation Harness for AI Coding & Command-Line Agents
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue?style=for-the-badge&logo=python&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-emerald?style=for-the-badge)
+![Languages](https://img.shields.io/badge/Languages-Python%20%7C%20C%2FC%2B%2B%20%7C%20Shell%20%7C%20JS%2FTS-orange?style=for-the-badge)
+![Architecture](https://img.shields.io/badge/Engine-In--Memory%20AST%20%2B%20Multi--Core%20ProcessPool-purple?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+**Polyglot SFT & RL Dataset Benchmark Generator & Closed-Loop Evaluation Harness for AI Coding & Command-Line Agents**
+
+</div>
 
 ---
 
