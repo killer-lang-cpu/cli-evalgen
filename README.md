@@ -71,25 +71,17 @@ Instead of relying on static, overfitted public benchmarks (like HumanEval or Le
                   └───────────────────────────────────────────────────┘
 
 
-✨ Key Technical Features
+## ✨ Key Technical Features
 
-     Polyglot Language Support: Natively parses and mutates operators across Python (.py), C/C++ (.c, .cpp), Linux Shell/Bash (.sh), and JavaScript/TypeScript (.js, .ts).
-
-     In-Memory RAM Execution Engine: Compiles mutated ASTs directly into bytecode in memory (compile() + exec()) to evaluate test assertion invariants in ~0.5ms, eliminating slow disk subprocess spawning bottlenecks.
-
-     Quarantined Local Sandboxing (./.sandbox/): Clones external GitHub repositories into a localized, auto-cleaning workspace with Windows read-only permission overrides (os.chmod / stat.S_IWRITE).
-
-     Auto-Dependency Resolver: Automatically detects requirements.txt, setup.py, pyproject.toml, and package.json upon clone to install dependencies before test execution.
-
-     Multi-Core Parallel Processing: Hardware-optimized using Python's ProcessPoolExecutor across 16 CPU threads, scanning and evaluating entire repositories in under 8 seconds.
-
-     * **Multi-Turn CLI Agent Trajectories:** Synthesizes realistic step-by-step terminal execution traces (Terminal Command -> Assertion Failure -> Patch Application -> Exit Code 0) specifically for training CLI agents (like Claude Code, Cursor, Devin).
-
-    Cyclomatic Complexity Classifier: Measures AST branching depth and function length to categorize tasks into Easy, Medium, and Hard difficulty tiers.
-
-     Closed-Loop AI Evaluator: Live benchmarking harness that stress-tests AI models against generated tasks, computing Pass@1 Accuracy % and Reward Signals (1.0 vs 0.0).
-
-     3-Panel Dark-Mode Studio UI: A developer-focused Tkinter desktop application featuring real-time dependency logs, live SFT mutation streams, and human-readable executive reporting.
+- **Polyglot Language Support:** Natively parses and mutates operators across Python (`.py`), C/C++ (`.c`, `.cpp`), Linux Shell/Bash (`.sh`), and JavaScript/TypeScript (`.js`, `.ts`).
+- **In-Memory RAM Execution Engine:** Compiles mutated ASTs directly into bytecode in memory (`compile()` + `exec()`) to evaluate test assertion invariants in ~0.5ms, eliminating slow disk subprocess spawning bottlenecks.
+- **Quarantined Local Sandboxing (`./.sandbox/`):** Clones external GitHub repositories into a localized, auto-cleaning workspace with Windows read-only permission overrides (`os.chmod` / `stat.S_IWRITE`).
+- **Auto-Dependency Resolver:** Automatically detects `requirements.txt`, `setup.py`, `pyproject.toml`, and `package.json` upon clone to install dependencies before test execution.
+- **Multi-Core Parallel Processing:** Hardware-optimized using Python's `ProcessPoolExecutor` across 16 CPU threads, scanning and evaluating entire repositories in under 8 seconds.
+- **Multi-Turn CLI Agent Trajectories:** Synthesizes realistic step-by-step terminal execution traces (Terminal Command -> Assertion Failure -> Patch Application -> Exit Code 0) specifically for training CLI agents (like Claude Code, Cursor, Devin).
+- **Cyclomatic Complexity Classifier:** Measures AST branching depth and function length to categorize tasks into `Easy`, `Medium`, and `Hard` difficulty tiers.
+- **Closed-Loop AI Evaluator:** Live benchmarking harness that stress-tests AI models against generated tasks, computing `Pass@1 Accuracy %` and `Reward Signals (1.0 vs 0.0)`.
+- **3-Panel Dark-Mode Studio UI:** A developer-focused Tkinter desktop application featuring real-time dependency logs, live SFT mutation streams, and human-readable executive reporting.
 
  Quickstart & Installation
 1. Clone the Repository
