@@ -1,0 +1,19 @@
+[task]
+id = "task_014_audioconv_py"
+name = "Fix logic regression in audioconv.py"
+version = "1.0.0"
+difficulty = "medium"
+timeout_seconds = 300
+tags = ["python", "ast-mutant", "bug-fix", "terminal-bench"]
+
+[environment]
+type = "docker"
+dockerfile = "environment/Dockerfile"
+workdir = "/workspace"
+
+[verifier]
+test_script = "tests/test.sh"
+expected_exit_code = 0
+
+[solution]
+solve_script = "solution/solve.sh"
